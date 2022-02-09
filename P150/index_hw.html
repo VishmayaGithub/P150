@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-sky color="#D8F2FF"></a-sky>
+        <a-assts>
+
+            <a-asset-item id="obj" src="./models/room/tinker.obj"></a-asset-item>
+            <a-asset-item id="mtl" src="./models/room/obj.mtl"></a-asset-item>
+            <a-asset-item id="glb" src="./models/table.glb"></a-asset-item>
+            <a-asset-item id="fence" src="models/fence/scene.gltf"></a-asset-item>
+
+        </a-assts>
+
+        <!--Train-->
+        <a-entity obj-model="obj: #obj; mtl: #mtl" position="-6 0 -15" rotation="-90 -180 0" scale="0.08 0.08 0.08 ">
+        </a-entity>
+        <!---->
+
+        <!--Fence-->
+        <a-entity>
+            <a-entity position = "0 3 -22" gltf-model= "#fence" shadow = "cast :true" scale = "1 1 1" rotation = "0 90 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity position = "4 3 -22" gltf-model= "#fence" shadow = "cast :true" scale = "1 1 1" rotation = "0 90 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity position = "8 3 -22" gltf-model= "#fence" shadow = "cast :true" scale = "1 1 1" rotation = "0 90 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity position = "12 3 -22" gltf-model= "#fence" shadow = "cast :true" scale = "1 1 1" rotation = "0 90 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity position = "-4 3 -22" gltf-model= "#fence" shadow = "cast :true" scale = "1 1 1" rotation = "0 90 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity position = "-8 3 -22" gltf-model= "#fence" shadow = "cast :true" scale = "1 1 1" rotation = "0 90 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity position = "-12 3 -22" gltf-model= "#fence" shadow = "cast :true" scale = "1 1 1" rotation = "0 90 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity position = "-16 3 -22" gltf-model= "#fence" shadow = "cast :true" scale = "1 1 1" rotation = "0 90 0"></a-entity>
+        </a-entity>
+        <!---->
+
+        <!--Ground-->
+        <a-plane height = "15" width = "40" rotation = "-90 0 0" position = "-3 0 -19" color ="#e9c48c"></a-plane>
+        <!---->
+
+        <!--track 1-->
+        <a-plane height = "1" width = "40" rotation = "-90 0 0" position = "-3 0.1 -15" color = "black"></a-plane>
+        <a-plane height = "1" width = "40" rotation = "-90 0 0" position = "-3 0.1 -17" color = "black"></a-plane>
+
+    </a-scene>
+</body>
+
+</html>
